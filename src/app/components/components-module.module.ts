@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ShareModulesModule } from './shared/share-modules.module';
 import { PrincipalDahsboardComponent } from './principal-dahsboard.component';
+import { MenuSideComponent } from './shared/menu-side/menu-side.component';
 
 
 
@@ -15,7 +16,8 @@ import { PrincipalDahsboardComponent } from './principal-dahsboard.component';
     ShareModulesModule
   ],
   exports: [
-    PrincipalDahsboardComponent
+    PrincipalDahsboardComponent,
+    MenuSideComponent
   ]
 })
 export class ComponentsModuleModule { }
