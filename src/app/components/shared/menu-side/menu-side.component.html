@@ -11,7 +11,9 @@
   <nav>
     <ul class="menu-list-items" >
       <li  *ngFor="let item of menuList" >
-        {{ item }}
+        <a href="">
+          <i [class]="item.icon"></i> {{ item.name }}
+        </a>
       </li>
     </ul>
   </nav>

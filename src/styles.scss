@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 
+
 /*Reset*/
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
@@ -505,6 +506,12 @@ a {
  // HEX color codes used: #F1F1F1, #202020, #7E909A, #1C4E80, #A5D8DD, #EA6A47, #0091D5
 
 
+// TODO COLORS
+$principal-color: #052A4E;
+$contrast-principal:#F1F1F1;
+$contrast-secundary: #DFA044;
+
+
 /*
 #517BA4
 RGB: 81–123–164
@@ -855,20 +862,65 @@ div[class*="col-"]{
       flex-direction: column;
       justify-content: center;
       align-content: center;
+      align-items: flex-start;
+}
+
+
+@mixin flex-full{
+      display: flex;
+      flex-direction: wrap;
+      justify-content: center;
+      align-content: flex-start;
       align-items: center;
 }
 
+
 /*  Elements styles  */
 
-.menu-logo-container{
 
+.menu{
+  @include flex-full;
+} 
+
+
+.menu-logo-container{
+  height: 120px ;
+}
   .menu-list-container{
 
-    .menu-list-items{
-      @include flex-columns;
+    display:flex;
+    width:100%;
+    background-color: $principal-color;
+    height:100vh;
+
+    nav{
+      display:flex;
+      width:80%;
+      margin:0px  auto;
+      align-items:flex-start;
+      padding-top:21px;
+        .menu-list-items{
+          width:90%;
+          @include flex-columns;
+
+          li{
+            margin-bottom: 21px;
+            font-size: 21px;
+            a{  
+                color:$contrast-principal;
+                transition:all ease 0.6s;
+                  &:hover{
+                    color:$contrast-secundary;
+                  }
+              }
+          }
+
+        }
     }
+
+
 
   }
 
-}
+
 
