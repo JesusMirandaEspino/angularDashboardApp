@@ -846,3 +846,29 @@ div[class*="col-"]{
   .col-full-12 {flex: 0 1 100%;}
 
 }
+
+/**************************************/
+/*                Mixings             */
+/**************************************/
+@mixin flex-columns {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+}
+
+/*  Elements styles  */
+
+.menu-logo-container{
+
+  .menu-list-container{
+
+    .menu-list-items{
+      @include flex-columns;
+    }
+
+  }
+
+}
+

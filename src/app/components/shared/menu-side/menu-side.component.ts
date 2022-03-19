@@ -7,6 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuSideComponent implements OnInit {
 
+  menuList: string[] = [
+    'Deal',
+    'Feed',
+    'stadistics',
+    'Teams',
+    'Projects',
+    'Settings',
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
