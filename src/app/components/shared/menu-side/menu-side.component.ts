@@ -10,11 +10,11 @@ export class MenuSideComponent implements OnInit {
   menuList: any[] = [
     {name: 'Deal',
     icon: 'fa fa-table-columns',
-    route: 'deal'
+    route: '/deal'
   },
     {name: 'Feed',
     icon: 'fa-solid fa-square-poll-horizontal',
-    route: 'feed'
+    route: '/feed'
   },
     {name: 'Stadistics',
     icon: 'fa-solid fa-chart-line',
@@ -22,15 +22,15 @@ export class MenuSideComponent implements OnInit {
   },
     {name: 'Teams',
     icon: 'fa-solid fa-people-group',
-    route: 'teams'
+    route: '/teams'
   },
     {name: 'Projects',
     icon: 'fa-solid fa-list-check',
-    route: 'projects'
+    route: '/projects'
   },
     {name: 'Settings',
     icon: 'fa-solid fa-gear',
-    route: 'settings'
+    route: '/settings'
   },
   ];
 

@@ -7,7 +7,7 @@
   <nav>
     <ul class="menu-list-items" >
       <li  *ngFor="let item of menuList" >
-        <a [routerLink]="item.route">
+        <a [routerLink]="item.route"  routerLinkActive="active-route">
           <i [class]="item.icon"></i> {{ item.name }}
         </a>
       </li>

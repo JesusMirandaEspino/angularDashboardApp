@@ -231,6 +231,11 @@ a:hover {
     outline: 0;
 }
 
+
+a, a:active, a:focus {
+   outline: none;
+}
+
 /**
  * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
  * 2. Improve image quality when scaled in IE 7.
@@ -509,8 +514,9 @@ a {
 // TODO COLORS
 $principal-color: #052A4E;
 $contrast-principal:#F1F1F1;
-$contrast-secundary: #DFA044;
-
+$contrast-secundary:  #FDDD73;
+$actived-router:#DFA044;
+$contrast-third: #A5D8DD;
 
 /*
 #517BA4
@@ -882,6 +888,11 @@ div[class*="col-"]{
   @include flex-full;
 }
 
+.active-route{
+color:$actived-router !important;
+ border:none !important;
+  border-radius: 6px ;
+}
 
 .header-container{
   height: 120px ;
