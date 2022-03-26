@@ -1,8 +1,4 @@
-<div class="menu-logo-container">
 
-
-
-</div>
 
 
 <div class="menu-list-container">
@@ -11,7 +7,7 @@
   <nav>
     <ul class="menu-list-items" >
       <li  *ngFor="let item of menuList" >
-        <a href="">
+        <a [routerLink]="item.route">
           <i [class]="item.icon"></i> {{ item.name }}
         </a>
       </li>
