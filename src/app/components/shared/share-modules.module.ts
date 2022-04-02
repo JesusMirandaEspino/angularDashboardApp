@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MenuSideComponent } from './menu-side/menu-side.component';
 import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from '../components-routing.module';
+import { ChatComponent } from './chat/chat.component';
 
 
 
@@ -10,7 +11,8 @@ import { AppRoutingModule } from '../components-routing.module';
 @NgModule({
   declarations: [
     MenuSideComponent,
-    HeaderComponent
+    HeaderComponent,
+    ChatComponent
   ],
   imports: [
     CommonModule,
@@ -18,7 +20,8 @@ import { AppRoutingModule } from '../components-routing.module';
   ],
   exports: [
     MenuSideComponent,
-    HeaderComponent
+    HeaderComponent,
+    ChatComponent
   ]
 })
 export class ShareModulesModule { }

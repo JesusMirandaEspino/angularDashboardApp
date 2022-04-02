@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  public showiconChat: boolean = true;
   title = 'dashboardApp';
+
+  iconActivatedChat(){
+    this.showiconChat = !this.showiconChat;
+  }
+
 }

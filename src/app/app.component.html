@@ -1,32 +1,38 @@
 <div class="fila">
 
-  <div class="contenedor1 header-container">
+    <div class="contenedor1 header-container">
 
-    <div class="col-full-12 col-12">
-      <app-header></app-header>
+        <div class="col-full-12 col-12">
+            <app-header></app-header>
+        </div>
+
     </div>
 
-  </div>
+    <div class="contenedor1 dashboard-container">
 
-<div class="contenedor1 dashboard-container">
+        <div class="col-full-2 col-2">
+            <app-menu-side style="width:100%"></app-menu-side>
+        </div>
 
-  <div   class="col-full-2 col-2" >
+        <div class="col-full-9 col-9">
+            <router-outlet></router-outlet>
+        </div>
 
-    <app-menu-side style="width:100%"></app-menu-side>
+        <div class="col-full-1 col-1">
+            <div class="chat-icon" *ngIf="showiconChat">
+                <i (click)="iconActivatedChat()" class="fa-solid fa-comment-dots"></i>
+            </div>
+        </div>
 
-  </div>
+        <div class="col-full-2 col-2 chat-container" *ngIf="!showiconChat">
+            <div class="box-chat">
+                <i (click)="iconActivatedChat()" class="fa-solid fa-circle-xmark"></i>
+                <app-chat></app-chat>
+            </div>
+        </div>
 
-  <div class="col-full-10 col-10" >
 
-    <router-outlet></router-outlet>
-
-
-  </div>
+    </div>
 
 
 </div>
-
-
-</div>
-
-
